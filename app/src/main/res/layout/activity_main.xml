@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/screen"
@@ -13,8 +14,30 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:gravity="bottom|end"
-        android:textColor="#ffffff"
         android:textSize="50sp" />
+
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCancel">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMyCoolStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/BlackTheme" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/LightTheme" />
+
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,28 +45,27 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/clear_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
             android:text="@string/c" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/delete_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
             android:text="@string/delete" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/multiply_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
-            android:text="@string/multiplication"
-            android:textSize="25sp" />
+            android:text="@string/multiplication" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/divide_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
             android:text="@string/dividing" />
     </LinearLayout>
@@ -54,27 +76,28 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/one_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/two_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/three_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
+
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/plus_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
             android:text="@string/addition" />
     </LinearLayout>
@@ -85,27 +108,28 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/four_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
+
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/five_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/six_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/minus_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
             android:text="@string/subtraction" />
     </LinearLayout>
@@ -116,27 +140,27 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/seven_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/eight_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/nine_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/percent_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/greenish_gray"
             android:text="@string/percent" />
 
@@ -148,28 +172,23 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/dot_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/dot" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/zero_btn"
-            style="@style/number_btn"
+            style="@style/AppTheme"
             android:backgroundTint="@color/granite_grey"
             android:text="@string/_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/equals_btn"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="4dp"
-            android:layout_weight="25"
+            style="@style/equals"
             android:backgroundTint="@color/yellow_orange"
-            android:text="@string/equally"
-            android:textSize="35sp" />
+            android:text="@string/equally" />
     </LinearLayout>
 
 </LinearLayout>
