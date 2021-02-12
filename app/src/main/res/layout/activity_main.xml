@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -29,13 +30,13 @@
             android:id="@+id/radioButtonMyCoolStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/BlackTheme" />
+            android:text="@string/BlackTheme1" />
 
         <com.google.android.material.radiobutton.MaterialRadioButton
             android:id="@+id/radioButtonMaterialLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/LightTheme" />
+            android:text="@string/LightTheme1" />
 
     </RadioGroup>
 

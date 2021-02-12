@@ -19,6 +19,6 @@
     <string name="dot">.</string>
     <string name="_0">0</string>
     <string name="equally">=</string>
-    <string name="BlackTheme">Чёрная тема </string>
-    <string name="LightTheme">Светлая тема</string>
+    <string name="BlackTheme1">Чёрная тема </string>
+    <string name="LightTheme1">Светлая тема</string>
 </resources>
