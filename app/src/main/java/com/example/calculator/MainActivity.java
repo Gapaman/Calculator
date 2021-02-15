@@ -2,8 +2,10 @@ package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 R.id.divide_btn,
                 R.id.plus_btn,
                 R.id.minus_btn,
-                R.id.equals_btn
+                R.id.equals_btn,
+
         };
         textView = findViewById(R.id.screen);
         calculator = new CalculatorModel();
@@ -74,5 +77,14 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(calculator.getText());
             }
         });
+        Button btnSettings = findViewById(R.id.Choose_btn);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent runSettings = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(runSettings);
+            }
+        });
+
     }
 }
